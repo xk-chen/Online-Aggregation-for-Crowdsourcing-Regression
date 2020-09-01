@@ -1,8 +1,12 @@
 # Online-Aggregation-for-Crowdsourcing-Regression
 Experimental codes for the algorithm Online Aggregation for Crowdsourcing Regression
 
-Data stream mining widely exists in practical applications such as online advertising, quantitative investment and crowdsourcing data analysis. For these tasks, the existing methods such as deep neural networks and support vector machines, which are based on batch learning scheme in general, have non-satisfactory performances in terms of efficiency and timeliness. As a new learning paradigm, online learning has become an ideal vehicle for large-scale data stream mining due to low computational complexity. 
-
-To address the ubiquitous issues of labor burden as well as algorithm selection in data stream mining tasks, in this paper, we propose Ensemble Online Learning algorithm with the following characteristics:
-1. This algorithm only needs to fetch the labels of partial observations that are determined by influence function. 
-2. Utilizing weighted majority method, this algorithm aggregates base learning algorithms effectively through the trust degree that is adjusted dynamically. 
+As an effective and low-cost way to fetch training data from workers, crowdsourcing services
+have become a popular choice for Internet giants. However, the obtained labels may be 
+awed due to the errors and noise from annotation processes, which limits the performance of downstream data mining
+tasks seriously. To address the issue, we propose Crowdsourcing Regression Online Aggregation Method,
+a semi-supervised crowdsourcing regression algorithm based on normalized exponential gradient strategy.
+This algorithm is capable of adjusting the degree of trust according to the performances of varied workers
+dynamically and predicts new instances in an online way. In addition, we prove that our method has a low
+regret bound and show its effectiveness via multiple numerical experiments on synthetic and real-world
+crowdsourcing datasets.
